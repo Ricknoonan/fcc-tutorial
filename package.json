@@ -23,5 +23,9 @@
     "format": "prettier --write .",
     "coverage": "hardhat coverage",
     "prettier": "prettier --write 'contracts/**/*.sol'"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1",
+    "solhint": "^3.3.7"
   }
 }

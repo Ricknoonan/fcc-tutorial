@@ -15,11 +15,11 @@ const KOVAN_RPC_URL =
     process.env.KOVAN_RPC_URL ||
     "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
 const RINKEBY_RPC_URL =
-  process.env.RINKEBY_RPC_URL ||
-  "https://eth-rinkeby.alchemyapi.io/v2/X-7xxKeoJvokHnL-6TOEtkHFDp3vtEoj"
+    process.env.RINKEBY_RPC_URL ||
+    "https://eth-rinkeby.alchemyapi.io/v2/X-7xxKeoJvokHnL-6TOEtkHFDp3vtEoj"
 const PRIVATE_KEY =
-  process.env.PRIVATE_KEY ||
-  "0x4099d067cacf18638e71c22acd685be7c284c0a21974368fd8f25e0cd58eb66d"
+    process.env.PRIVATE_KEY ||
+    "0x4099d067cacf18638e71c22acd685be7c284c0a21974368fd8f25e0cd58eb66d"
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || ""
 
 module.exports = {
@@ -61,7 +61,7 @@ module.exports = {
         currency: "USD",
         outputFile: "gas-report.txt",
         noColors: true,
-        // coinmarketcap: COINMARKETCAP_API_KEY,
+        coinmarketcap: COINMARKETCAP_API_KEY,
     },
     namedAccounts: {
         deployer: {
