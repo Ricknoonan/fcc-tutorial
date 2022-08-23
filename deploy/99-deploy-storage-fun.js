@@ -16,7 +16,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         waitConfirmations: network.config.blockConfirmations || 1,
     })
 
-    log("Logging storage...")
+    /*     log(`Logging storage...${funWithStorage.address}`)
     for (let i = 0; i < 10; i++) {
         log(
             `Location ${i}: ${await ethers.provider.getStorageAt(
@@ -24,7 +24,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
                 i
             )}`
         )
-    }
+    } */
 
     // You can use this to trace!
     // const trace = await network.provider.send("debug_traceTransaction", [
